@@ -1,0 +1,31 @@
+a {color:olive;
+    text-decoration:none;
+}
+h1 {
+    font-size: 50px; 
+    text-align: center;
+    display:block;
+    border-bottom: 1px solid olive;
+    margin:0;
+    padding: 20px;
+}
+#grid ol {color:olive; 
+    border-right:1px solid olive;
+    width: 80px;
+    margin:0;
+    padding:20px;
+    padding-left:33px;  
+}
+body {margin:0;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 170px 1fr;
+}
+@media(max-width:800px){
+    #grid {
+    display:block;
+    }  
+    #grid ol {border-right:none;} 
+    h1 {border-bottom:none;}
+}

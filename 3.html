@@ -3,19 +3,55 @@
     <head>
 <title>WEB1-London</title>
 <meta charset="utf-8">
+<style>
+    a {color:olive;
+        text-decoration:none;
+    }
+    h1 {
+        font-size: 50px; 
+        text-align: center;
+        display:block;
+        border-bottom: 1px solid olive;
+        margin:0;
+        padding: 20px;
+    }
+    #grid ol {color:olive; 
+        border-right:1px solid olive;
+        width: 80px;
+        margin:0;
+        padding:20px;
+        padding-left:33px;  
+    }
+    body {margin:0;
+    }
+    #grid {
+        display:grid;
+        grid-template-columns: 170px 1fr;
+    }
+    @media(max-width:800px){
+        #grid {
+        display:block;
+        }  
+        #grid ol {border-right:none;} 
+        h1 {border-bottom:none;}
+    }
+</style>
 </head>
 
 <body>
     <h1><a href="index.html">CITIES</a></h1>
-        <ol>
+    <div id="grid">    
+    <ol>
 <li><a href="1.html">Seoul</a></li>
 <li><a href="2.html">New york</a></li>
 <li><a href="3.html">London</a></li>
 </ol>
-
+<div>
 <h2><a href="https://www.london.gov.uk/" target="_blank" title="London website">London</a>으로 놀러가자</h2>
 <strong>The <u>Place</u></strong> where you must go
-<img src="p3.jpg" width="100%">
+<img src="p3.jpg" width="90%">
 <p>London (/ˈlʌndən/ ⓘ) is the capital and largest city of England and the United Kingdom, with a population of around 8.8 million.[1][note 1] It stands on the River Thames in south-east England at the head of a 50-mile (80 km) estuary down to the North Sea and has been a major settlement for nearly two millennia.[9] The City of London, its ancient core and financial centre, was founded by the Romans as Londinium and retains its medieval boundaries.[note 2][10] The City of Westminster, to the west of the City of London, has for centuries hosted the national government and parliament. Since the 19th century,[11] the name "London" also refers to the metropolis around this core, historically split among the counties of Middlesex, Essex, Surrey, Kent, and Hertfordshire,[12] which since 1965 has largely comprised Greater London,[13] which is governed by 33 local authorities and the Greater London Authority</p>
+</div>
+</div>
 </body>
 </html>
